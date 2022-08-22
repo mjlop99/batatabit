@@ -1,5 +1,60 @@
- body{
-    text-align: center;
-    color: aliceblue;
-    background-color: brown;
+ 
+ /* 
+ 1. posicionamiendo
+ 2. modelo de caja
+ 3. tipografia
+ 4. visual
+ 5. miselaneos u otros
+ */
+
+ :root{
+/* colores */
+
+ --bitcoin-orange: #f7931a;
+ --soft-orange: #ffe9d5;
+ --secondary-blue: #1a9af7;
+ --soft-blue: #e7f5ff;
+ --warm-black: #282623;
+ --black: #201e1c;
+ --grey: #bababa;
+ --off-white: #faf8f7;
+ --just-white: #fff;
+
+ }
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ html{
+   font-size: 62.5%;
+   font-family: 'DM Sans', sans-serif;
+
+ }
+ header{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   min-width: 32rem;
+   height: 33.4rem;
+   text-align: center;
+ }
+ header img{
+   width: 15rem;
+   height: 2.4rem;
+   margin-top: 6rem;
+   /* para alinear un hijo con un padre que tiene flex */
+   align-self: center;
+ }
+ .header--tittle-container{
+   width: 90%;
+   min-width: 28.8rem;
+   max-width: 90rem;
+   height: 21.8rem;
+   margin-top: 4rem;
+   text-align: center;
+   align-self: center;
+
  }
