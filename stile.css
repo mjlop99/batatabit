@@ -40,6 +40,8 @@
    min-width: 32rem;
    height: 33.4rem;
    text-align: center;
+   background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+
  }
  header img{
    width: 15rem;
@@ -56,5 +58,50 @@
    margin-top: 4rem;
    text-align: center;
    align-self: center;
+   margin-bottom: 3.2rem;
+ }
+ .header--tittle-container h1{
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+  margin-bottom: 2.4rem;
 
+ }
+ .header--tittle-container p{
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--soft-orange);
+
+ }
+ .header--tittle-container .header--button{
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.823rem;
+  background-color: var(--off-white);
+  color: var(--warm-black);
+
+  position: absolute;
+  display: block;
+  padding: 1.6rem;
+  /* top: calc(100% - 2.4rem);
+  left: calc(50% - 10rem); */
+
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* sombras */
+
+  box-shadow: 0 4px 8px rgba(96, 68, 72, 0.16);
+  border-radius: 0.5rem;
+
+ }
+
+ .header--tittle-container .header--button span{
+  display: inline-block;
+  padding: 0.4rem;
+  background-image: url('Assets/icons/down-arrow.svg');
+  width: 1.2rem;
  }
