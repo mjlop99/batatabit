@@ -76,6 +76,7 @@
 
  }
  .header--tittle-container .header--button{
+  text-decoration: none;
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.823rem;
