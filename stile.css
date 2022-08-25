@@ -37,16 +37,16 @@
    flex-direction: column;
    justify-content: center;
    width: 100%;
-   min-width: 32rem;
-   height: 33.4rem;
+   min-width: 320px;
+   height: 340px;
    text-align: center;
    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
 
  }
  header img{
-   width: 15rem;
-   height: 2.4rem;
-   margin-top: 6rem;
+   width: 150px;
+   height: 240px;
+   margin-top: 60px;
    /* para alinear un hijo con un padre que tiene flex */
    align-self: center;
  }
@@ -241,4 +241,95 @@
   line-height: 1.6rem;
   color: var(--warm-black);
   font-weight: 300;
+ }
+ .main-product-detail{
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--warm-black);
+
+ }
+ .main-product-detail .product-detail-patatalogo{
+  position: absolute;
+  width: 40px;
+  height: 25px;
+  background-image: url(/Assets/icons/batata.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0%;
+  right: 50%;
+  transform: translate(50%,-50%);
+ }
+ .product-detail--tittle{
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+ }
+ .product-detail--tittle h2{
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+ }
+ .product-detail--tittle p{
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+ }
+ .product-detail--card{
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+ }
+ 
+ .product-detail--card .card--logo{
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ .product-detail--card .clock{
+  background-image: url(Assets/icons/clock.svg);
+ }
+ .product-detail--card .eye{
+  background-image: url(Assets/icons/eye.svg);
+ }
+ .product-detail--card .money{
+  background-image: url(Assets/icons/dollar-sign.svg);
+ }
+ .product-detail--card .check{
+  background-image: url(Assets/icons/check-circle.svg);
+ }
+ .product-detail--card .product-card--tittle{
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+
+ }
+ .product-detail--card .product-card--body{
+  
+  margin-top: 10px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
  }
