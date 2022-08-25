@@ -11,7 +11,7 @@
 /* colores */
 
  --bitcoin-orange: #f7931a;
- --soft-orange: #ffe9d5;
+ --soft-orange: #FFE9D4;
  --secondary-blue: #1a9af7;
  --soft-blue: #e7f5ff;
  --warm-black: #282623;
@@ -226,4 +226,19 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+ }
+ .currency-table--date{
+  width: 190px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 8px;
+  background-color: var(--soft-orange);
+  border-radius: 8px;
+ }
+ .currency-table--date p{
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: var(--warm-black);
+  font-weight: 300;
  }
