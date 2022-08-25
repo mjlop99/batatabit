@@ -3,5 +3,6 @@
 *.jpeg
 *.png
 *.gif
+*.svg
 /express
 /node_moduless
