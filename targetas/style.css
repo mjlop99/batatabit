@@ -1,0 +1,159 @@
+:root{
+    /* colores */
+    
+     --bitcoin-orange: #f7931a;
+     --soft-orange: #FFE9D4;
+     --secondary-blue: #1a9af7;
+     --soft-blue: #e7f5ff;
+     --warm-black: #282623;
+     --black: #201e1c;
+     --grey: #bababa;
+     --off-white: #faf8f7;
+     --just-white: #fff;
+    
+     }
+     *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+     }
+     html{
+       font-size: 62.5%;
+       font-family: 'DM Sans', sans-serif;
+       background-color: var(--black);
+    
+     }
+     header{
+     }
+     main{
+        width: 100%;
+        height: 100%;
+        min-width: 320px;
+        text-align: center;
+        
+     }
+     .plans-container--cards{
+        position: relative;
+        width: 70%;
+        min-width: 224px;
+        max-width: 300px;
+        height: 250px;
+        margin: 50px auto 0;
+        padding: 0 16px;
+        background-color: var(--warm-black);
+        border-radius: 16px;
+        box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.16);
+       }
+       .plans-container--cards .recommend{
+        position: absolute;
+        width: 120px;
+        height: 32px;
+        text-align: center;
+        background-color: var(--black);
+        border: 1px solid var(--bitcoin-orange);
+        border-radius: 8px;
+        color: var(--just-white);
+        top: 0%;
+        right: 50%;
+        transform: translate(50% , -50%);
+        padding:8px;
+        margin-bottom: 12px;
+        -webkit-text-stroke: 0.25px var(--bitcoin-orange);
+        font-size: 1.4rem;
+       }
+       .plans-container--cards .plan-card-tittle{
+        padding-top: 32px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        color: var(--bitcoin-orange);
+       }
+       .plans-container--cards .plan-card-price{
+        padding: 5px 0;
+        font-size: 5.2rem;
+        font-weight: bold;
+        line-height: 5.2rem;
+        color: var(--bitcoin-orange);
+        position: relative;
+       }
+       .plans-container--cards sup{
+        position: relative;
+        font-size: 1.8rem;
+        font-weight: 300
+       }
+       .plans-container--cards .plan-card-saving{
+        font-size: 1.2rem;
+        color:#757575 ;
+       }
+       .plan-card--ca{
+        position: relative;
+        width: 150px;
+        height: 48px;
+        margin-top: 20px;
+        background-color: var(--bitcoin-orange);
+        border: none;
+        border-radius: 8px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.8rem;
+        color: var(--just-white);
+        overflow: hidden;
+        
+        transition: 0.2s;
+       }
+       .plan-card--ca:hover{
+        background-color: var(--bitcoin-orange);
+        box-shadow: 0 0 10px var(--bitcoin-orange),0 0 40px var(--bitcoin-orange) ,0 0 80px var(--bitcoin-orange);
+        transition-delay: 1.25s;
+       }
+       .plan-card--ca span{
+        display: block;
+        position: absolute;
+       }
+       #span1{
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg,transparent,#757575);
+       }
+       .plan-card--ca:hover #span1{
+        left: 100%;
+        transition: 1s;
+       }
+       #span3{
+        bottom:  0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg,transparent,#757575);
+       }
+       .plan-card--ca:hover #span3{
+        right: 100%;
+        transition: 1s;
+        transition-delay: 0.5s;
+       }
+       #span2{
+        top: -100%;
+        right: 0%;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg,transparent,#757575);
+       }
+       .plan-card--ca:hover #span2{
+        top:  100%;
+        transition: 1s;
+        transition-delay: 0.25s;
+       }
+       #span4{
+        bottom:  -100%;
+        left: 0%;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg,transparent,#757575);
+       }
+       .plan-card--ca:hover #span4{
+        bottom:   100%;
+        transition: 1s;
+        transition-delay: 0.75s;
+       }

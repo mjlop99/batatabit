@@ -58,7 +58,7 @@
    width: 90%;
    min-width: 288px;
    max-width: 900px;
-   height: 21.8rem;
+   height: 218px;
    margin-top: 40px;
    text-align: center;
    align-self: center;
@@ -69,7 +69,7 @@
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--just-white);
-  margin-bottom: 2.4rem;
+  margin-bottom: 24px;
 
  }
  .header--tittle-container p{
@@ -100,21 +100,22 @@
   /* sombras */
 
   box-shadow: 0 4px 8px rgba(96, 68, 72, 0.16);
-  border-radius: 0.5rem;
+  border-radius: 5px;
 
  }
 
  .header--tittle-container .header--button span{
   display: inline-block;
-  padding: 0.4rem;
+  padding: 4px;
   background-image: url('Assets/icons/down-arrow.svg');
-  width: 1.2rem;
+  background-repeat: no-repeat;
+  width: 12px;
  }
  main{
   width: 100%;
   height: auto;
   background-color: var(--off-white);
-  min-width: 32rem;
+  min-width: 320px;
 
  }
  .main--exchange-container{
@@ -381,7 +382,17 @@
   color: var(#757575);
   
  }
+ .plans-container--slider{
+  display: flex;
+  gap: 28px;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+ }
  .plans-container--cards{
+  position: relative;
+  scroll-snap-align: center;
   width: 70%;
   min-width: 224px;
   max-width: 300px;
@@ -396,7 +407,6 @@
   position: absolute;
   width: 120px;
   height: 32px;
-  background-color: var(--bitcoin-orange);
   border-radius: 8px;
   color: var(--just-white);
   top: 0%;
@@ -429,4 +439,42 @@
  .plans-container--cards .plan-card-saving{
   font-size: 1.2rem;
   color:#757575 ;
+ }
+ .plan-card--ca{
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  background-color: var(--just-white);
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--black);
+ }
+ .plan-card--ca span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(Assets/icons/orange-right-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: text-bottom;
+ }
+ .plans-container--cards .recommend-economic{
+  background-color: var(--secondary-blue);
+ }
+ .economic-botton{
+  border: 2px solid var(--secondary-blue);
+ }
+ .plans-container--cards .recommend-plan{
+  background-color: var(--bitcoin-orange);
+ }
+ .recommend-botton{
+  border: 2px solid var(--bitcoin-orange);
+ }
+ .plans-container--cards .recommend-premium{
+  background-color: rgb(40, 153, 40);
+ }
+ .premium-botton{
+  border: 2px solid rgb(40, 153, 40);
  }
